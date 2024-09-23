@@ -1,0 +1,271 @@
+@font-face {
+    font-family: 'interFont';
+    src: 
+        url('../fonts/Fonts/Inter24pt-Regular.woff2') format('woff2'),
+        url('../fonts/Fonts/Inter24pt-Regular.woff') format('woff');
+            
+    font-weight: normal;
+    font-style: normal;
+  }
+  
+body {
+    font-family: 'interFont';
+    background-color:  #F7F9FC;
+}
+
+.control-card{
+    box-shadow: 0px 2px 6px 0px #141F2B14;
+    box-shadow: 0px 8px 12px 0px #141F2B0A;
+    background-color: #FFFFFF;
+
+}
+
+.image-container{
+    display: flex;
+}
+.container-1{
+        position: relative;
+        background: url('../Img/landingimage.png');
+        width: 100%;
+        height: 256px;
+        background-repeat: no-repeat;
+        background-size: cover;
+        padding: 24px;        
+}
+.seprator{
+    border: 2px solid #EFF3F6;
+}
+.top-left-image {
+    position: absolute;
+    top: 10px; /* Adjust distance from the top */
+    left: 10px; /* Adjust distance from the left */
+    width: 88px; /* Set width for the image */
+    height: auto; /* Keep the aspect ratio */
+}
+.bottom-left-text {
+    position: absolute;
+    bottom: 10px; /* Align text 10px from the bottom */
+    left: 10px; /* Align text 10px from the left */
+    color: white; /* Text color */
+    font-size: 16px; /* Text size */
+    margin: 0; /* Remove default margin */
+}
+.greeting{
+    font-size: 11px;
+    font-weight: 600;
+    line-height: 18px;
+    letter-spacing: 1px;
+    text-align: left;
+    color: #FFFFFF;
+    margin:0;
+}
+.landing-title{
+    font-size: 24px;
+    font-weight: 800;
+    line-height: 32px;
+    letter-spacing: 0.5px;
+    text-align: left;
+    color: #FFFFFF;
+    margin: 0;
+}
+.detail-card-container{
+    background-color: #FFFFFF;
+    padding : 16px 24px 16px 24px;
+}
+.details-card{
+    display:inline-flex;
+    font-size: 15px;
+    font-weight: 600;
+    letter-spacing: 0.10000000149011612px;
+    text-align: left;
+    color: #232D38;
+    margin-right: 64px;
+    align-items: center;
+}
+.detail-image-container{
+    display: inline-block;
+    padding: 10px;
+}
+.detail-content-container{
+    display: inline-block;
+    padding: 10px;
+}
+.contact-title{
+    font-family: Poppins;
+    font-size: 20px;
+    font-weight: 700;
+    line-height: 28px;
+    letter-spacing: 0.5px;
+    text-align: left;
+}
+.flex-container-contact{
+    display: flex;
+    flex-wrap: wrap;
+}
+.flex-contact-container{
+    display: flex;
+    flex-wrap: wrap;
+}
+.contact-card{
+    width: 250px;
+    height: 142px;
+    padding: 12px 48px 12px 12px;
+    gap: 15px;
+    border-radius: 8px;
+    border: 1px solid #DBE2E9;
+    opacity: 0px;
+    margin: 8px;
+}
+.designation{
+    font-size: 13px;
+    font-weight: 500;
+    line-height: 22px;
+    letter-spacing: 0.10000000149011612px;
+    text-align: left;
+}
+.person-name{
+    font-size: 15px;
+    font-weight: 600;
+    line-height: 24px;
+    letter-spacing: 0.10000000149011612px;
+    text-align: left;
+}
+.contact-no{
+    font-family: Inter;
+    font-size: 13px;
+    font-weight: 600;
+    line-height: 22px;
+    letter-spacing: 0.10000000149011612px;
+    text-align: left;
+    color: #0B907B;
+}
+.mail-id{
+    font-size: 13px;
+    font-weight: 500;
+    line-height: 22px;
+    letter-spacing: 0.10000000149011612px;
+    text-align: left;
+    color: #1F6CBF;
+}
+.side-contact{
+    padding: 24px;
+    border-radius: 8px;
+    border: 1px solid #FFEBBF;
+    background-color: #FFF8E9;
+    margin: 8px;
+}
+.contact-text{
+    font-size: 13px;
+    font-weight: 600;
+    line-height: 22px;
+    letter-spacing: 0.10000000149011612px;
+    text-align: center;
+    color:  #3F4B57;
+}
+.border{
+   border: 1px solid black;
+}
+
+.booking{
+    width: 176px;
+    height: 40px;
+    padding: 8px 16px 8px 16px;
+    color: #FFFFFF;
+    border-radius: 5px;
+    opacity: 0px;
+    background-color:  #0B907B;
+}
+
+/* Container holding sidebar and content */
+body, html {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    display: flex;
+}
+
+/* Sidebar styles */
+.sidebar {
+    height: 100%;
+    width: 60px; /* Initially only wide enough for icons */
+    position: fixed;
+    left: 0;
+    top: 0;
+    background-color: #F7F9FC;
+    color: black;
+    overflow-x: hidden;
+    transition: 0.3s; /* Smooth transition for expanding/collapsing */
+    padding-top: 60px;
+}
+
+/* When sidebar is expanded */
+.sidebar.expanded {
+    width: 250px; /* Full width for sidebar when expanded */
+}
+
+/* Sidebar links */
+.sidebar a {
+    display: flex;
+    align-items: center;
+    padding: 10px 15px;
+    text-decoration: none;
+    font-size: 14px;
+    color: black;
+    transition: 0.3s;
+}
+
+/* Icon and text alignment */
+.sidebar img {
+    width: 25px;
+    margin-right: 10px;
+}
+
+.sidebar .sidebar-text {
+    display: none; /* Hide text initially */
+    white-space: nowrap;
+}
+
+.sidebar.expanded .sidebar-text {
+    display: inline-block; /* Show text when sidebar is expanded */
+}
+
+/* Toggle button style */
+.toggle-btn {
+    font-size: 13px;
+    padding: 10px 15px;
+    background-color: black;
+    color:  #576473;
+    border: none;
+    cursor: pointer;
+    position: fixed;
+    top: 800px;
+    left: 40px;
+    transition: left 0.3s ease;
+    line-height: 22px;
+}
+
+/* When the sidebar is expanded, move button to the right */
+.sidebar.expanded + .toggle-btn {
+    left: 260px;
+}
+
+/* Main content area */
+.main-content {
+    margin-left: 70px; /* Initially adjusted for icon-width */
+    padding: 16px;
+    transition: margin-left 0.3s; /* Smooth transition for content */
+}
+
+.sidebar.expanded ~ .main-content {
+    margin-left: 260px; /* Adjust when sidebar is expanded */
+}
+
+/* Responsive design */
+@media screen and (max-width: 768px) {
+    .sidebar {
+        width: 100%; /* Full width sidebar on small screens */
+    }
+    .main-content {
+        margin-left: 0; /* Content takes full width on small screens */
+    }
+}

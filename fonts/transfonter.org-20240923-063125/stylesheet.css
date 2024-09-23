@@ -1,0 +1,39 @@
+@font-face {
+    font-family: 'Inter 28pt';
+    src: url('Inter28pt-ThinItalic.eot');
+    src: url('Inter28pt-ThinItalic.eot?#iefix') format('embedded-opentype'),
+        url('Inter28pt-ThinItalic.woff2') format('woff2'),
+        url('Inter28pt-ThinItalic.woff') format('woff'),
+        url('Inter28pt-ThinItalic.ttf') format('truetype'),
+        url('Inter28pt-ThinItalic.svg#Inter28pt-ThinItalic') format('svg');
+    font-weight: 100;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Inter 28pt';
+    src: url('Inter28pt-Thin.eot');
+    src: url('Inter28pt-Thin.eot?#iefix') format('embedded-opentype'),
+        url('Inter28pt-Thin.woff2') format('woff2'),
+        url('Inter28pt-Thin.woff') format('woff'),
+        url('Inter28pt-Thin.ttf') format('truetype'),
+        url('Inter28pt-Thin.svg#Inter28pt-Thin') format('svg');
+    font-weight: 100;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Inter 28pt';
+    src: url('Inter28pt-SemiBoldItalic.eot');
+    src: url('Inter28pt-SemiBoldItalic.eot?#iefix') format('embedded-opentype'),
+        url('Inter28pt-SemiBoldItalic.woff2') format('woff2'),
+        url('Inter28pt-SemiBoldItalic.woff') format('woff'),
+        url('Inter28pt-SemiBoldItalic.ttf') format('truetype'),
+        url('Inter28pt-SemiBoldItalic.svg#Inter28pt-SemiBoldItalic') format('svg');
+    font-weight: 600;
+    font-style: italic;
+    font-display: swap;
+}
+
