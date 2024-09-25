@@ -6,111 +6,160 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Voyage</title>
     <link rel="stylesheet" href="css/index.css">
+    <script>
+        function toggleNav() {
+            document.body.classList.toggle("nav-open");
+        }
+    </script>
 </head>
 
 <body>
-        <!-- Button to toggle the sidebar -->
-        
+    <header>
+          <nav class="custom-navbar">
+            <div class="custom-navbar-logo">
+              <a href="#"><img  src="Img/logo-voyage.png" alt="not supported"></a>
+            </div>
+            <div class="main-streat" style="background: #0973620A;padding: 5px;">
+                <a class="custom-link" href="#" style="color: #3F4B57; font-weight: 600;">
+                    <img class="custom-link-img" src="Img/logo.png" alt="not supported" style="width: 32px; height: 32px;">
+                    <span class="custom-link-text">Main Street Tower - USA </span>
+                </a>
+            </div>
+            <div class="custom-navbar-menu">
+              <a  href="#"><img src="Img/question.png" alt="not supported"></a>
+              <a  href="#"><img src="Img/notify.png" alt="not supported"></a>
+              <div class="custom-dropdown ">
+                <button class="custom-dropbtn ">CS</button>
+                <div class="custom-dropdown-content">
+                    <a href="#"><img src="Img/profileVector.png" alt="not supported"> My Account</a>
+                    <a href="#"><img src="Img/Three People.png" alt="not supported"> My Organization</a>
+                    <a href="#"><img src="Img/bell.png" alt="not supported"> Notifications</a>
+                    <a href="#"><img src="Img/Log In Circle.png" alt="not supported"> Log Out</a>
+                </div>
+              </div>
+            </div>
+            <button class="custom-navbar-toggle" id="customToggleBtn">&#9776;</button>
+          </nav>
+    </header>
 
-        <!-- Side navigation bar -->
-        <div id="mySidebar" class="sidebar">
-            <a href="#"><img src="Img/stack.png" alt="Home"> <span class="sidebar-text">Booking List</span></a>
-            <a href="#"><img src="Img/calander_grey.png" alt="Services"> <span class="sidebar-text">Calander</span></a>
-            <a href="#"><img src="Img/twopeople.png" alt="Clients"> <span class="sidebar-text">User Management</span></a>
-            <a href="#"><img src="Img/navigation.png" alt="Contact"> <span class="sidebar-text">Project Management</span></a>
-            <a href="#"><img src="Img/earth.png" alt="Clients"> <span class="sidebar-text">Site Details</span></a>
-            <a href="#"><img src="Img/clockgrey.png" alt="Contact"> <span class="sidebar-text">Availability</span></a>
-            <button id="sidebarToggle" class="toggle-btn" onclick="toggleSidebar()" style="color: white;z-index: 10;"><img src="Img/Page-1.png" alt=""> Collapse</button>
+    <nav class="nav">
+        <div class="nav-links-container ">
+            <a href="#" class="nav__link ">
+                <img src="Img/stack.png" alt="Home" class="nav__icon ">
+                <span class="nav__text ">Booking List</span>
+            </a>
+            <a href="#" class="nav__link ">
+                <img src="Img/calander_grey.png" alt="Services" class="nav__icon ">
+                <span class="nav__text ">Calander</span>
+            </a>
+            <a href="#" class="nav__link ">
+                <img src="Img/twopeople.png" alt="Clients" class="nav__icon ">
+                <span class="nav__text ">User Management</span>
+            </a>
+            <a href="#" class="nav__link ">
+                <img src="Img/navigation.png" alt="Contact" class="nav__icon ">
+                <span class="nav__text ">Project Management</span>
+            </a>
+            <a href="#" class="nav__link ">
+                <img src="Img/earth.png" alt="Clients" class="nav__icon ">
+                <span class="nav__text ">Site Details</span>
+            </a>
+            <a href="#" class="nav__link ">
+                <img src="Img/clockgrey.png" alt="Contact" class="nav__icon ">
+                <span class="nav__text ">Availability</span>
+            </a>
         </div>
-
-        <!-- Main content area -->
-        <div id="mainContent" class="main-content">
-            <div class="control-card">
-                <div class="image-container">
-                    <div class="container-1">
-                        <img class="top-left-image" src="Img/logo.png" alt="not supported">
-                        <div class="bottom-left-text">
-                            <p class="greeting">Welcome To</p>
-                            <p class="landing-title">Main Street Tower</p>
-                        </div>
+        <button type="button" class="nav-toggle nav__link " onclick="toggleNav()">
+            <ion-icon name="chevron-forward-outline" size="large"><img src="Img/Page-1.png" alt="not supported"></ion-icon><span class="nav__text " style="color: #576473;
+">Collapse</span>
+        </button>
+    </nav>
+    
+    <div id="mainConten" class="main ">
+        <div class="control-card">
+            <div class="image-container">
+                <div class="container-1">
+                    <img class="top-left-image" src="Img/logo.png" alt="not supported">
+                    <div class="bottom-left-text">
+                        <p class="greeting">Welcome To</p>
+                        <p class="landing-title">Main Street Tower</p>
                     </div>
                 </div>
-                <div class="detail-card-container d-flex row-flex">
-                    <div class="details-card">
-                        <div class="detail-image-container">
-                            <img src="Img/locationVector.png" alt="not supported">
-                        </div>
-                        <div class="detail-content-container">
-                            <p>555 Main St. <br> Township, CA 90001</p>
-                        </div>
+            </div>
+            <div class="detail-card-container d-flex row-flex">
+                <div class="details-card">
+                    <div class="detail-image-container">
+                        <img src="Img/locationVector.png" alt="not supported">
                     </div>
-                    <div class="details-card">
-                        <div class="detail-image-container">
-                            <img src="Img/clockVector.png" alt="not supported">
-                        </div>
-                        <div class="detail-content-container">
-                            <p>7am - 5pm (PDT)</p>
-                        </div>
-                    </div>
-                    <div class="details-card">
-                        <div class="detail-image-container">
-                            <img src="Img/calanderVector.png" alt="not supported">
-                        </div>
-                        <div class="detail-content-container">
-                            <p>Monday - Friday</p>
-                        </div>
+                    <div class="detail-content-container">
+                        <p>555 Main St. <br> Township, CA 90001</p>
                     </div>
                 </div>
-                <div class="seprator"></div>
-                <div class="contact-container">
-                    <p class="contact-title">Site Contacts</p>
-                    <div class="flex-container-contact">
-                        <div class="flex-contact-container">
-                            <div class="contact-card">
-                                <p class="designation">General Foreman</p>
-                                <p class="person-name">Tony Doe</p>
-                                <p class="contact-no">(510) 577-9987</p>
-                                <p class="mail-id">azeezhabeebomobolaji@gmail.com</p>
-                            </div>
-                            <div class="contact-card">
-                                <p class="designation">General Foreman</p>
-                                <p class="person-name">Tony Doe</p>
-                                <p class="contact-no">(510) 577-9987</p>
-                                <p class="mail-id">azeezhabeebomobolaji@gmail.com</p>
-                            </div>
-                            <div class="contact-card">
-                                <p class="designation">General Foreman</p>
-                                <p class="person-name">Tony Doe</p>
-                                <p class="contact-no">(510) 577-9987</p>
-                                <p class="mail-id">azeezhabeebomobolaji@gmail.com</p>
-                            </div>
-                            <div class="contact-card">
-                                <p class="designation">General Foreman</p>
-                                <p class="person-name">Tony Doe</p>
-                                <p class="contact-no">(510) 577-9987</p>
-                                <p class="mail-id">azeezhabeebomobolaji@gmail.com</p>
-                            </div>
-                            <div class="contact-card">
-                                <p class="designation">General Foreman</p>
-                                <p class="person-name">Tony Doe</p>
-                                <p class="contact-no">(510) 577-9987</p>
-                                <p class="mail-id">azeezhabeebomobolaji@gmail.com</p>
-                            </div>
+                <div class="details-card">
+                    <div class="detail-image-container">
+                        <img src="Img/clockVector.png" alt="not supported">
+                    </div>
+                    <div class="detail-content-container">
+                        <p>7am - 5pm (PDT)</p>
+                    </div>
+                </div>
+                <div class="details-card">
+                    <div class="detail-image-container">
+                        <img src="Img/calanderVector.png" alt="not supported">
+                    </div>
+                    <div class="detail-content-container">
+                        <p>Monday - Friday</p>
+                    </div>
+                </div>
+            </div>
+            <div class="seprator"></div>
+            <div class="contact-container" style="padding:24px;">
+                <p class="contact-title">Site Contacts</p>
+                <div class="flex-container-contact">
+                    <div class="flex-contact-container">
+                        <div class="contact-card">
+                            <p class="designation">General Foreman</p>
+                            <p class="person-name">Tony Doe</p>
+                            <p class="contact-no">(510) 577-9987</p>
+                            <p class="mail-id">azeezhabeebomobolaji@gmail.com</p>
                         </div>
-                        <div class="side-contact">
-                            <p class="contact-text">This is where you can add in information to help your users manage their
-                                deliveries better.</p>
-                            <p class="contact-text">Site access times 9am - 5pm</p>
-                            <p class="contact-text">Only open on working days (Monday - Friday)</p>
-                            <p class="contact-text">Please make a delivery by selecting 'Schedule a Delivery' from the menu</p>
+                        <div class="contact-card">
+                            <p class="designation">General Foreman</p>
+                            <p class="person-name">Tony Doe</p>
+                            <p class="contact-no">(510) 577-9987</p>
+                            <p class="mail-id">azeezhabeebomobolaji@gmail.com</p>
                         </div>
+                        <div class="contact-card">
+                            <p class="designation">General Foreman</p>
+                            <p class="person-name">Tony Doe</p>
+                            <p class="contact-no">(510) 577-9987</p>
+                            <p class="mail-id">azeezhabeebomobolaji@gmail.com</p>
+                        </div>
+                        <div class="contact-card">
+                            <p class="designation">General Foreman</p>
+                            <p class="person-name">Tony Doe</p>
+                            <p class="contact-no">(510) 577-9987</p>
+                            <p class="mail-id">azeezhabeebomobolaji@gmail.com</p>
+                        </div>
+                        <div class="contact-card">
+                            <p class="designation">General Foreman</p>
+                            <p class="person-name">Tony Doe</p>
+                            <p class="contact-no">(510) 577-9987</p>
+                            <p class="mail-id">azeezhabeebomobolaji@gmail.com</p>
+                        </div>
+                    </div>
+                    <div class="side-contact">
+                        <p class="contact-text">This is where you can add in information to help your users manage their
+                            deliveries better.</p>
+                        <p class="contact-text">Site access times 9am - 5pm</p>
+                        <p class="contact-text">Only open on working days (Monday - Friday)</p>
+                        <p class="contact-text">Please make a delivery by selecting 'Schedule a Delivery' from the menu
+                        </p>
                     </div>
                 </div>
             </div>
         </div>
-    
-        
-   
+    </div>
     <script src="scripts/script.js"></script>
 </body>
 
